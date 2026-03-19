@@ -1,10 +1,10 @@
-/* --- CONFIGURAÇÕES GERAIS E CORES APVS --- */
+/* --- CONFIGURAÇÕES GERAIS E CORES DO SEU INSTAGRAM APVS --- */
 :root {
-    --cor-primaria: #003366; /* Azul Escuro (Segurança e Confiança) */
-    --cor-secundaria: #333333; /* Texto escuro padrão */
-    --cor-fundo: #F4F7F6; /* Fundo cinza bem claro */
-    --cor-whatsapp: #25D366; /* Verde do WhatsApp mantido no rodapé */
-    --cor-acao: #FF9900; /* Laranja/Amarelo para o botão principal */
+    --cor-primaria: #0A2463; /* Azul Escuro profundo padrão APVS */
+    --cor-secundaria: #333333; /* Cor do texto (cinza escuro para boa leitura) */
+    --cor-fundo: #F8F9FA; /* Fundo bem claro e limpo */
+    --cor-whatsapp: #25D366; /* Verde padrão do botão do WhatsApp */
+    --cor-acao: #D5B24E; /* Dourado APVS para chamar a atenção no botão de cotação */
 }
 
 * {
