@@ -1,11 +1,11 @@
-/* --- CONFIGURAÇÕES GERAIS E CORES PREMIUM --- */
+/* --- CONFIGURAÇÕES GERAIS E CORES PREMIUM APVS --- */
 :root {
     --cor-primaria: #0A2463; /* Azul Escuro profundo institucional */
     --cor-secundaria: #333333; /* Cor do texto */
     --cor-fundo: #F8F9FA; /* Fundo limpo */
     --cor-whatsapp: #25D366; /* Verde do WhatsApp */
     --cor-acao: #D5B24E; /* Dourado/Amarelo APVS para o botão principal */
-    --cor-acao-hover: #D5B24Eee; /* Tom mais claro para hover */
+    --cor-acao-hover: #e6c45e; /* Tom mais claro para hover */
     --sombra: 0 4px 15px rgba(0,0,0,0.1); /* Sombra padrão */
     --sombra-card: 0 10px 30px rgba(0,0,0,0.05); /* Sombra profunda */
 }
@@ -45,6 +45,7 @@ h2 {
     color: var(--cor-primaria);
     position: relative;
     padding-bottom: 15px;
+    font-weight: 800;
 }
 
 h2::after {
@@ -59,52 +60,55 @@ h2::after {
     border-radius: 5px;
 }
 
-/* --- HERO SECTION (Visual Impactante com Imagem de Fundo) --- */
+/* --- HERO SECTION (A Mágica acontece aqui) --- */
 .hero {
-    /* ⚠️ SUBSTITUA O LINK ABAIXO PELA SUA FOTO DE ALTA QUALIDADE */
-    background: linear-gradient(rgba(10, 36, 99, 0.9), rgba(10, 36, 99, 0.9)), 
-                url('https://via.placeholder.com/1920x1080?text=Sua+Foto+de+Carro') center/cover no-repeat;
+    /* Puxa a sua foto do GitHub e aplica um gradiente azul escuro por cima (85% de opacidade) para dar leitura ao texto */
+    background: linear-gradient(rgba(10, 36, 99, 0.85), rgba(10, 36, 99, 0.85)), 
+                url('background_carro.jpg') center/cover no-repeat;
     color: white;
     text-align: center;
     padding: 180px 20px;
     display: flex;
     align-items: center;
-    min-height: 80vh; /* Ocupa pelo menos 80% da altura da tela */
+    min-height: 80vh; 
 }
 
 .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 25px;
+    font-size: 3.2rem;
+    margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-weight: 800;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Sombra no texto para destacar da foto */
 }
 
 .hero p {
     font-size: 1.3rem;
     margin-bottom: 40px;
-    font-weight: 300;
+    font-weight: 400;
+    color: #e0e6ed;
 }
 
 /* --- BOTÕES DE AÇÃO --- */
 .btn-acao {
     display: inline-block;
-    background: linear-gradient(135deg, var(--cor-acao), #ffcc00); /* Gradiente no botão */
-    color: #fff;
+    background: linear-gradient(135deg, var(--cor-acao), #ffcc00); 
+    color: #000; /* Texto escuro no fundo dourado dá um visual super premium */
     padding: 20px 45px;
     text-decoration: none;
-    font-weight: 700;
-    border-radius: 5px; /* Quadrado profissional */
-    font-size: 1.3rem;
+    font-weight: 800;
+    border-radius: 50px; /* Formato pílula como no modelo */
+    font-size: 1.2rem;
     transition: 0.3s ease;
     text-transform: uppercase;
-    box-shadow: 0 6px 15px rgba(213, 178, 78, 0.4); /* Sombra colorida */
+    box-shadow: 0 6px 15px rgba(213, 178, 78, 0.4); 
 }
 
 .btn-acao:hover {
     background: var(--cor-acao-hover);
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(213, 178, 78, 0.5);
-    color: white;
+    box-shadow: 0 8px 20px rgba(213, 178, 78, 0.6);
+    color: #000;
 }
 
 .btn-whatsapp {
@@ -124,7 +128,7 @@ h2::after {
     background-color: #1ebe57;
 }
 
-/* --- SEÇÃO SOBRE (Usando Flexbox para alinhar foto e texto) --- */
+/* --- SEÇÃO SOBRE --- */
 .conteudo-sobre {
     display: flex;
     align-items: center;
@@ -170,18 +174,19 @@ h2::after {
     margin-bottom: 20px;
     color: var(--cor-primaria);
     font-size: 1.5rem;
+    font-weight: 700;
 }
 
 /* --- ANIMAÇÕES DE SCROLL AVANÇADAS --- */
 .oculto {
     opacity: 0;
-    transform: translateY(60px); /* Começa mais abaixo */
-    transition: all 1s ease-out; /* Mais suave */
+    transform: translateY(60px); 
+    transition: all 1s ease-out; 
 }
 
 .mostrar {
     opacity: 1;
-    transform: translateY(0); /* Desliza para cima */
+    transform: translateY(0); 
 }
 
 /* --- FAQ (Dúvidas Frequentes) --- */
@@ -204,7 +209,7 @@ h2::after {
     outline: none;
     transition: 0.4s;
     font-size: 1.15rem;
-    font-weight: 600;
+    font-weight: 700;
     border-bottom: 1px solid #eee;
     display: flex;
     justify-content: space-between;
@@ -265,7 +270,7 @@ footer {
     
     .hero {
         min-height: auto;
-        padding: 100px 20px;
+        padding: 120px 20px 80px; /* Ajuste para não cortar o carro no mobile */
     }
     
     .hero h1 {
@@ -277,7 +282,7 @@ footer {
     }
     
     .btn-acao {
-        font-size: 1.1rem;
-        padding: 18px 30px;
+        font-size: 1rem;
+        padding: 18px 25px;
     }
 }
